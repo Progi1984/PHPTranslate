@@ -1,0 +1,24 @@
+{
+    "name": "progi1984/php-translate",
+    "description": "Permits to translate text using some services",
+    "keywords":["PHP","translation","translate","translator","service"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Progi1984",
+            "email": "progi1984@gmail.com",
+            "homepage": "http://rootslabs.net/blog/",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-curl":"*"
+    },
+    "autoload": {
+        "psr-0": {
+            "PHPTranslate": "src/"
+        }
+    }
+}
