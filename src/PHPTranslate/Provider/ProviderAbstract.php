@@ -1,7 +1,8 @@
 <?php
 namespace PHPTranslate\Provider;
 
-abstract class ProviderAbstract{
+abstract class ProviderAbstract
+{
     protected $langSource;
 
     public function setSourceLang($lang)

@@ -28,7 +28,7 @@ class BingTranslateProvider extends ProviderAbstract implements ProviderInterfac
         $url .= '&From=%27'.$this->langSource.'%27';
         $url .= '&To=%27'.$lang.'%27';
 
-        $hCurl = curl_init ($url);
+        $hCurl = curl_init($url);
         curl_setopt($hCurl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
         curl_setopt($hCurl, CURLOPT_USERPWD, $this->apiKey.':'.$this->apiKey);
         curl_setopt($hCurl, CURLOPT_RETURNTRANSFER, true);

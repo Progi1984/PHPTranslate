@@ -10,9 +10,9 @@ class GoogleTranslateProvider extends ProviderAbstract implements ProviderInterf
         $url .= '&tl='.$lang;
         $url .= '&text='.urlencode($text);
 
-        $hCurl = curl_init ($url);
-        curl_setopt ($hCurl, CURLOPT_RETURNTRANSFER, true);
-        $sReturn = curl_exec ($hCurl);
+        $hCurl = curl_init($url);
+        curl_setopt($hCurl, CURLOPT_RETURNTRANSFER, true);
+        $sReturn = curl_exec($hCurl);
         $arrReturn = explode('"', $sReturn);
         return $arrReturn[1];
     }

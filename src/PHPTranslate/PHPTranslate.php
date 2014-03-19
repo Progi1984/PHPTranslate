@@ -35,7 +35,7 @@ class PHPTranslate
 
     public function translate($text, $lang)
     {
-        if(!$this->provider instanceof ProviderInterface) {
+        if (!$this->provider instanceof ProviderInterface) {
             throw new InvalidAdapterException('No adapter defined for PHPTranslate');
         }
 
