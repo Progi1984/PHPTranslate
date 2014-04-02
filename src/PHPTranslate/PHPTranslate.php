@@ -27,6 +27,11 @@ class PHPTranslate
         return $this;
     }
 
+    public function getLang()
+    {
+        return $this->lang;
+    }
+
     public function setAdapter(ProviderInterface $provider)
     {
         $this->provider = $provider;
