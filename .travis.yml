@@ -36,7 +36,7 @@ script:
   ## PHPLOC
   - php phploc.phar src/
   ## PHPUnit
-  - phpunit -c ./ --coverage-text
+  - phpunit -c ./ --coverage-text --coverage-clover build/logs/clover.xml
 
 after_script:
  ## Coveralls
